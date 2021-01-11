@@ -4,14 +4,14 @@ import React from 'react';
  export default class App extends React.Component{
    
    state = {
-     people :[]
+     peopleIn :[]
    }
    
    componentDidMount(){
      fetch('http://api.open-notify.org/astros.json')
      .then(res => res.json())
      .then(data =>{this.setState({
-       people:data.people
+       peopleIn:data.people
      })
      })
    }
@@ -19,7 +19,7 @@ import React from 'react';
    render(){
     return(
        <div>
-                {this.state.people.map(person => person.name )}
+                {this.state.peopleIn.map(person => person.name )}
             </div>
       )
 
