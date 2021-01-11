@@ -10,9 +10,10 @@ import React from 'react';
    componentDidMount(){
      fetch('http://api.open-notify.org/astros.json')
      .then(res => res.json())
-     .then(data => this.setState({
-       
-     }))
+     .then(data =>{this.setState({
+       people:data.people
+     })
+     })
    }
    
    render(){
