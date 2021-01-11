@@ -19,8 +19,7 @@ import React from 'react';
    render(){
     return(
        <div>
-                {this.state.people.map((person,craft) => 
-                    <h1>{person.name} {person.craft} </h1>)}
+                {this.state.people.map(person => person.name )}
             </div>
       )
 
