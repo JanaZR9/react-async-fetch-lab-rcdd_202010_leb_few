@@ -1,2 +1,6 @@
 // create your App component here
-impor 
+import React from 'react';
+
+ export default class App extends React.component{
+   
+ }
