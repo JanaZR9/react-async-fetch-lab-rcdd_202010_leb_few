@@ -12,4 +12,16 @@ import React from 'react';
      .then(res => res.json())
      .then(data => )
    }
+   
+   render(){
+    return(
+       <div>
+                {this.state.people.map((person,craft) => 
+                    <h1>{person.name} {person.craft} </h1>)}
+            </div>
+      )
+
+
+  }
+} 
  }
